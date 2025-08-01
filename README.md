@@ -73,3 +73,15 @@ somepassword
 $ kubectl get secret some-other-secret -o yaml | yq .data.token | base64 -d
 sometoken
 ```
+
+### Delete the secrets
+
+```
+kubectl delete sopssecret test-sops-secrets-operator
+```
+
+### Uninstall the chart
+
+```
+helm uninstall sops
+```

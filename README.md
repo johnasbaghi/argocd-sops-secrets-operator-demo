@@ -29,7 +29,9 @@ kubectl create namespace sops-operator
 
 ### Create a Secret using key.txt
 
+```
 kubectl create secret generic -n sops-operator age-key --from-file=./key.txt
+```
 
 ### Install the operator
 
